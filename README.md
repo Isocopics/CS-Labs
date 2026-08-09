@@ -1,41 +1,33 @@
-﻿# CS-Labs
+# CS-Labs
 
-Hands-on cybersecurity labs documenting my development toward an entry-level SOC and cybersecurity role.
+I'm using this repo to keep track of the cybersecurity work I'm doing while I build toward a junior SOC / security analyst role.
 
-This repository focuses on practical investigation, analysis, and documentation rather than simply completing training platforms.
+The goal here isn't to make every lab look like a finished corporate report. I want to document what I actually did, what I noticed, what I got wrong at first, and what I learned from fixing it.
 
-## Current Labs
+## Current lab
 
-### Windows Authentication Event Investigation
-Analyzed Windows Security Event Logs using PowerShell to identify and interpret successful authentication activity.
+### Windows Authentication Event Log Analysis
 
-Topics covered:
+My first lab was focused on Windows Security logs and successful logons.
 
-- Windows Security Event ID 4624
-- Logon Types 2, 5, and 7
-- Windows service authentication
-- Interactive session activity
-- Workstation unlock events
-- Subject vs. New Logon fields
-- Process attribution
-- Local vs. network authentication indicators
-- PowerShell event log filtering
+I used Event Viewer and PowerShell to look through Event ID 4624 activity and compare a few different logon types. The biggest thing I learned was that reading the event correctly matters more than just memorizing the Event ID. Fields like **Subject**, **New Logon**, **Logon Type**, **Process Name**, and **Source Network Address** change the story.
 
-[View the lab](windows-event-log-analysis/README.md)
+[Read the Windows authentication lab](windows-event-log-analysis/README.md)
 
-## Skills Being Developed
+## Tools I've used so far
 
-- Windows Security Event Logs
+- Windows Event Viewer
 - PowerShell
-- Linux fundamentals
-- Networking fundamentals
-- Authentication analysis
-- SOC alert triage
-- Log analysis
-- SIEM fundamentals
-- Incident investigation
-- Technical documentation
+- Git / GitHub
 
-## Privacy
+## What I'm working on next
 
-Personal identifiers, account information, email addresses, IP addresses, and other sensitive information are redacted from public evidence.
+I'm still building the fundamentals, so this repo will grow as I get more hands-on practice with:
+
+- failed Windows logons and account activity
+- Linux logs and authentication
+- networking and Wireshark
+- Splunk / SIEM searches
+- alert triage and incident notes
+
+I'll update the repo as I actually complete the work.
