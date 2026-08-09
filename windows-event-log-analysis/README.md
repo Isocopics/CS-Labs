@@ -82,3 +82,9 @@ The investigation identified normal service activity, interactive session activi
 - Account lockout investigation
 - Privileged logon events
 - SIEM ingestion and alert analysis
+
+## Evidence
+
+Sanitized Event ID 4624 workstation-unlock event:
+
+![Sanitized Windows Event 4624 evidence](evidence/event-4624-logon-type-7-redacted.png)
